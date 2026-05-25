@@ -144,16 +144,15 @@ Simulates a decision-level and performance telemetry monitoring framework for au
   ```bash
   python3 -m observability_runtime.simulator
   ```
-6. governance_plane (coming soon)
+### 6. governance_plane
 
-Runtime governance and bounded autonomy.
+Simulates a sovereign runtime governance and bounded autonomy plane for autonomous agent networks.
 
-Planned Topics
-runtime policy enforcement
-approval systems
-risk radius management
-escalation ownership
-sovereign governance
+* **Demonstrates**: Role-Based Access Control (RBAC) permission grids, corporate policy boundary checks, Human-in-the-Loop (HITL) escalations, authority-rank arbitration engines, and compliance audit replay logs.
+* **Run command**:
+  ```bash
+  python3 -m governance_plane.simulator
+  ```
 🔍 Engineering Themes
 
 This repository focuses on:
