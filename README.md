@@ -67,50 +67,56 @@ Policy & Governance Plane
 Observability Layer
 ↓
 Recovery & Resilience Layer
-📦 Repository Structure
+## 📦 Repository Structure
+
+```
 autonomous-enterprise-runtime/
 │
-├── runtime_scheduler/
+├── assets/
+│   └── banner.png            # Visual repository banner
 │
-├── coordination_bus/
+├── runtime_scheduler/        # Module 1: Task scheduling and recovery
+│   ├── scheduler.py
+│   ├── agent_executor.py
+│   ├── policy_engine.py
+│   ├── trace_logger.py
+│   ├── recovery_handler.py
+│   ├── simulator.py
+│   └── README.md
 │
-├── memory_systems/
-│
-├── economic_routing/
-│
-├── observability_runtime/
-│
-├── governance_plane/
+├── coordination_bus/         # Module 2: Multi-agent coordination plane
+│   ├── event_bus.py
+│   ├── policy_engine.py
+│   ├── arbitration_engine.py
+│   ├── coordinator.py
+│   ├── trace_logger.py
+│   ├── simulator.py
+│   └── README.md
 │
 └── README.md
-🔧 Modules
-1. runtime_scheduler
+```
 
-Simulates foundational runtime infrastructure for autonomous systems.
+## 🔧 Modules
 
-Demonstrates:
-task scheduling
-execution orchestration
-runtime policy validation
-trace logging
-recovery handling
-Execution Flow
-Task Queue
-→ Runtime Scheduler
-→ Agent Execution
-→ Policy Validation
-→ Trace Logging
-→ Recovery Handling
-2. coordination_bus (coming soon)
+### 1. runtime_scheduler
 
-Multi-agent coordination infrastructure.
+Simulates foundational execution and recovery runtime infrastructure for autonomous agent clusters.
 
-Planned Topics
-agent-to-agent communication
-negotiation patterns
-distributed coordination
-workflow synchronization
-runtime event buses
+* **Demonstrates**: Task scheduling priority queues, inline policy validations (costs & restricted tools), trace telemetry, and self-healing recovery handlers (retries, backoff, LLM fallbacks, HITL).
+* **Run command**:
+  ```bash
+  python3 -m runtime_scheduler.simulator
+  ```
+
+### 2. coordination_bus
+
+Simulates a decentralized event-driven coordination plane enabling secure, audited, and moderated agent-to-agent interactions.
+
+* **Demonstrates**: Pub-sub event propagation, publisher verification policies, direct-path interaction checks, and arbitration mechanisms for multi-agent conflicts.
+* **Run command**:
+  ```bash
+  python3 -m coordination_bus.simulator
+  ```
 3. memory_systems (coming soon)
 
 AI-native memory infrastructure.

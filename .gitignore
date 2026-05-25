@@ -10,5 +10,13 @@ env/
 venv/
 ENV/
 
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
 # Project specific
 traces/
