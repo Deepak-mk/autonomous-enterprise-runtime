@@ -126,16 +126,15 @@ Simulates a multi-layered cognitive memory system for agents modeled beyond simp
   ```bash
   python3 -m memory_systems.simulator
   ```
-4. economic_routing (coming soon)
+### 4. economic_routing
 
-Cost-aware runtime scheduling.
+Simulates cost-aware scheduling and dynamic LLM routing to optimize computing budgets across agents.
 
-Planned Topics
-reasoning budgets
-model routing
-latency-aware execution
-inference optimization
-dynamic orchestration
+* **Demonstrates**: Multi-dimensional task classification, cost/latency optimization trade-offs, reasoning budget caps, and dynamic fallback down-routing under tight budget constraints.
+* **Run command**:
+  ```bash
+  python3 -m economic_routing.simulator
+  ```
 5. observability_runtime (coming soon)
 
 Decision-level observability infrastructure.
