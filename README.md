@@ -117,17 +117,15 @@ Simulates a decentralized event-driven coordination plane enabling secure, audit
   ```bash
   python3 -m coordination_bus.simulator
   ```
-3. memory_systems (coming soon)
+### 3. memory_systems
 
-AI-native memory infrastructure.
+Simulates a multi-layered cognitive memory system for agents modeled beyond simple RAG frameworks.
 
-Planned Topics
-working memory
-episodic memory
-semantic memory
-memory decay
-graph memory
-contextual retrieval
+* **Demonstrates**: Working memory caches, episodic experience logs (experience-based retrieval), triplet-based semantic policy systems, concurrency lock coordination, and background memory consolidation syncs.
+* **Run command**:
+  ```bash
+  python3 -m memory_systems.simulator
+  ```
 4. economic_routing (coming soon)
 
 Cost-aware runtime scheduling.
