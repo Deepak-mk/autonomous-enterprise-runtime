@@ -135,16 +135,15 @@ Simulates cost-aware scheduling and dynamic LLM routing to optimize computing bu
   ```bash
   python3 -m economic_routing.simulator
   ```
-5. observability_runtime (coming soon)
+### 5. observability_runtime
 
-Decision-level observability infrastructure.
+Simulates a decision-level and performance telemetry monitoring framework for autonomous agent clusters.
 
-Planned Topics
-reasoning traces
-execution traces
-behavioral telemetry
-policy visibility
-decision replay
+* **Demonstrates**: Multi-layered logging probes (Cognitive thoughts, Performance metrics, Memory telemetry, Governance audits), unified chronological session builder, and developer replay engines.
+* **Run command**:
+  ```bash
+  python3 -m observability_runtime.simulator
+  ```
 6. governance_plane (coming soon)
 
 Runtime governance and bounded autonomy.
